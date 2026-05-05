@@ -11,12 +11,37 @@ sites:
     url: https://nextcloud.bts-crew.com/
   - name: Dress Notes
     url: https://bts-dressnotes.su.bath.ac.uk/
-
+  - name: PAT Database
+    url: https://assets.bts-crew.com/
+  - name: Internal DNS
+    url: https://dnsadmin.bts.su.bath.ac.uk/
+  - name: Telephone Management
+    url: https://telephony.bts-crew.com/
+  - name: Access Control Admin
+    url: https://auth.bts-crew.com/admin/prod/console
+  - name: Access Control Admin (onprem)
+    url: https://bts-auth.su.bath.ac.uk/admin/bts-prod/console
+  - name: PC Deployment
+    url: https://pc-deployment.bts-crew.com/
+  - name: Virtual Machine Console
+    url: https://incus-admin.su.bath.ac.uk/
+  - name: Traefik Dashboard
+    url: https://dashboard.traefik.su-srv-01.bath.ac.uk/
+  - name: LibreNMS
+    url: https://librenms.bts-crew.com/
+  - name: Grafana
+    url: https://bts-metrics.su.bath.ac.uk/
+  - name: Prometheus
+    url: https://bts-prom.su.bath.ac.uk/
+  - name: Mimir
+    url: https://bts-mimir.su.bath.ac.uk/
+  - name: Alloy
+    url: https://bts-alloy.su.bath.ac.uk/
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: aspect102.github.io/bts-status
-  # baseUrl: /your-repo-name
+  # cname: aspect102.github.io/bts-status
+  baseUrl: /bts-status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
