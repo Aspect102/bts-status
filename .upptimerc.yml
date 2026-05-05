@@ -15,8 +15,18 @@ sites:
     url: https://assets.bts-crew.com/
   - name: Internal DNS
     url: https://dnsadmin.bts.su.bath.ac.uk/
+    expectedStatusCodes:
+    - 200
+    - 302
+    - 301
+    - 403
   - name: Telephone Management
     url: https://telephony.bts-crew.com/
+    expectedStatusCodes:
+    - 200
+    - 302
+    - 301
+    - 403
   - name: Access Control Admin
     url: https://auth.bts-crew.com/admin/prod/console
   - name: Access Control Admin (onprem)
@@ -25,6 +35,11 @@ sites:
     url: https://pc-deployment.bts-crew.com/
   - name: Virtual Machine Console
     url: https://incus-admin.su.bath.ac.uk/
+    expectedStatusCodes:
+    - 200
+    - 302
+    - 301
+    - 403
   - name: Traefik Dashboard
     url: https://dashboard.traefik.su-srv-01.bath.ac.uk/
   - name: LibreNMS
@@ -33,8 +48,18 @@ sites:
     url: https://bts-metrics.su.bath.ac.uk/
   - name: Prometheus
     url: https://bts-prom.su.bath.ac.uk/
+    expectedStatusCodes:
+    - 200
+    - 302
+    - 301
+    - 403
   - name: Mimir
     url: https://bts-mimir.su.bath.ac.uk/
+    expectedStatusCodes:
+    - 200
+    - 302
+    - 301
+    - 403
   - name: Alloy
     url: https://bts-alloy.su.bath.ac.uk/
 status-website:
