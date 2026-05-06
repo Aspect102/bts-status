@@ -14,7 +14,7 @@ jobs:
         with:
           homeserver: 'matrix.org' # Change if using a private server
           token: ${{ secrets.MATRIX_TOKEN }}
-          channel: '!your_room_id:matrix.org' # MUST be the internal Room ID
+          channel: '!xUcaroYgJWBNZMTspq:matrix.laserbeam31.uk' # MUST be the internal Room ID
           message: |
             ### Upptime Alert: ${{ github.event.issue.title }}
             **Status:** ${{ github.event.action == 'opened' && '🟥 DOWN' || '🟩 BACK UP' }}
