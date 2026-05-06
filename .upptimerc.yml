@@ -67,7 +67,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: bts-gitstatus.su.bath.ac.uk
   baseUrl: /
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://raw.githubusercontent.com/Aspect102/bts-status/refs/heads/master/assets/bts.svg
   name: BTS Status Page
   introTitle: "This is the Backstage Technical Services status page for all of our services."
   introMessage:
