@@ -4,9 +4,9 @@ repo: bts-status # The name of this repository
 
 sites:
   - name: Website
-    url: https://www.bts-crew.com/
+    url: https://www.TESTbts-TESTcrew.com/
   - name: Wiki
-    url: https://wiki.TESTbts-TESTcrew.com/
+    url: https://wiki.bts-crew.com/
   - name: Nextcloud
     url: https://nextcloud.bts-crew.com/
   - name: Dress Notes
