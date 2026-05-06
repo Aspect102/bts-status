@@ -1,0 +1,21 @@
+name: Matrix Notification
+on:
+  issues:
+    types: [opened, closed]
+
+jobs:
+  matrix_notification:
+    if: contains(github.event.issue.labels.*.name, 'status')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Matrix Message
+        uses: svenstaro/matrix-github-action@v2
+        with:
+          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
+          server_url: ${{ secrets.MATRIX_SERVER_URL }}
+          room_id: ${{ secrets.MATRIX_ROOM_ID }}
+          message: |
+            ### Upptime Alert
+            **Site:** ${{ github.event.issue.title }}
+            **Status:** ${{ github.event.action == 'opened' && '🔴 DOWN' || '🟢 BACK UP' }}
+            [View Details](${{ github.event.issue.html_url }})
