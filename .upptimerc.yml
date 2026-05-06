@@ -4,7 +4,7 @@ repo: bts-status # The name of this repository
 
 sites:
   - name: Website
-    url: https://www.TESTbts-TESTcrew.com/
+    url: https://www.bts-crew.com/
   - name: Wiki
     url: https://wiki.bts-crew.com/
   - name: Nextcloud
