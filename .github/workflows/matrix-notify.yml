@@ -12,7 +12,7 @@ jobs:
       - name: Send status to Matrix
         uses: fadenb/matrix-chat-message@v0.0.6
         with:
-          homeserver: 'matrix.org' # Change if using a private server
+          homeserver: 'laserbeam31.uk' # Change if using a private server
           token: ${{ secrets.MATRIX_TOKEN }}
           channel: '!xUcaroYgJWBNZMTspq:matrix.laserbeam31.uk' # MUST be the internal Room ID
           message: |
