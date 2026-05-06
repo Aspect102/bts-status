@@ -5,19 +5,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.bts-crew.com.ico",
     "slug": "website",
     "status": "up",
-    "uptime": "99.55%",
-    "uptimeDay": "99.50%",
-    "uptimeWeek": "99.55%",
-    "uptimeMonth": "99.55%",
-    "uptimeYear": "99.55%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 472,
     "timeDay": 451,
     "timeWeek": 472,
     "timeMonth": 472,
     "timeYear": 472,
-    "dailyMinutesDown": {
-      "2026-05-06": 7
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Wiki",
@@ -25,18 +23,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/wiki.testbts-testcrew.com.ico",
     "slug": "wiki",
     "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "99.97%",
-    "uptimeMonth": "99.97%",
-    "uptimeYear": "99.97%",
+    "uptime": "99.96%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.96%",
+    "uptimeYear": "99.96%",
     "time": 1138,
     "timeDay": 1045,
     "timeWeek": 1138,
     "timeMonth": 1138,
     "timeYear": 1138,
     "dailyMinutesDown": {
-      "2026-05-06": 0
+      "2026-05-06": 1
     }
   },
   {
