@@ -1,6 +1,5 @@
-# Change these first
-owner: Aspect102 # Your GitHub organization or username, where this repository lives
-repo: bts-status # The name of this repository
+owner: Aspect102
+repo: bts-status
 
 sites:
   - name: Website
@@ -15,18 +14,10 @@ sites:
     url: https://assets.bts-crew.com/
   - name: Internal DNS
     url: https://dnsadmin.bts.su.bath.ac.uk/
-    expectedStatusCodes:
-    - 200
-    - 302
-    - 301
-    - 403
+    expectedStatusCodes: [200, 302, 301, 403]
   - name: Telephone Management
     url: https://telephony.bts-crew.com/
-    expectedStatusCodes:
-    - 200
-    - 302
-    - 301
-    - 403
+    expectedStatusCodes: [200, 302, 301, 403]
   - name: Access Control Admin
     url: https://auth.bts-crew.com/admin/prod/console
   - name: Access Control Admin (onprem)
@@ -35,11 +26,7 @@ sites:
     url: https://pc-deployment.bts-crew.com/
   - name: Virtual Machine Console
     url: https://incus-admin.su.bath.ac.uk/
-    expectedStatusCodes:
-    - 200
-    - 302
-    - 301
-    - 403
+    expectedStatusCodes: [200, 302, 301, 403]
   - name: Traefik Dashboard
     url: https://dashboard.traefik.su-srv-01.bath.ac.uk/
   - name: LibreNMS
@@ -48,34 +35,77 @@ sites:
     url: https://bts-metrics.su.bath.ac.uk/
   - name: Prometheus
     url: https://bts-prom.su.bath.ac.uk/
-    expectedStatusCodes:
-    - 200
-    - 302
-    - 301
-    - 403
+    expectedStatusCodes: [200, 302, 301, 403]
   - name: Mimir
     url: https://bts-mimir.su.bath.ac.uk/
-    expectedStatusCodes:
-    - 200
-    - 302
-    - 301
-    - 403
+    expectedStatusCodes: [200, 302, 301, 403]
   - name: Alloy
     url: https://bts-alloy.su.bath.ac.uk/
+
+  # Handset Monitoring
+  - name: "Handset 101"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"101","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 102"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"102","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 103"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"103","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 111"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"111","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 112"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"112","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 113"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"113","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 114"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"114","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
+  - name: "Handset 115"
+    url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
+    method: GET
+    headers:
+      - "Authorization: Bearer $GRAFANA_TOKEN"
+    __dangerous__body_down_if_text_missing: '"resource":"115","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    skipNotifications: true
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: bts-gitstatus.su.bath.ac.uk
   baseUrl: /
   logoUrl: https://raw.githubusercontent.com/Aspect102/bts-status/refs/heads/master/assets/bts.svg
   name: BTS Status Page
-  introTitle: "This is the Backstage Technical Services status page for all of our services."
-  introMessage:
+  introTitle: "This is the Backstage Technical Services status page."
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
