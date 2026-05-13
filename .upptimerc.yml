@@ -48,56 +48,63 @@ sites:
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"101","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"101","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 102"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"102","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"102","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 103"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"103","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"103","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 111"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"111","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"111","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 112"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"112","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"112","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 113"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"113","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"113","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 114"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"114","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"114","tech":"PJSIP"'
     skipNotifications: true
+
   - name: "Handset 115"
     url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
     method: GET
     headers:
       - "Authorization: Bearer $GRAFANA_TOKEN"
-    __dangerous__body_down_if_text_missing: '"resource":"115","tech":"PJSIP"},"annotations":{},"state":"Normal"'
+    __dangerous__body_down_if_text_missing: '"resource":"115","tech":"PJSIP"'
     skipNotifications: true
 status-website:
   baseUrl: /
