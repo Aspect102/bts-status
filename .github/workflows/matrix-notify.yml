@@ -5,16 +5,18 @@ on:
 
 jobs:
   matrix-notification:
-    # Only run if the issue is tagged as a status alert by Upptime
-    if: contains(github.event.issue.labels.*.name, 'status')
+    # Only run if it's a status alert AND the title does not contain "Handset"
+    if: |
+      contains(github.event.issue.labels.*.name, 'status') && 
+      !contains(github.event.issue.title, 'Handset')
     runs-on: ubuntu-latest
     steps:
       - name: Send status to Matrix
         uses: fadenb/matrix-chat-message@v0.0.6
         with:
-          homeserver: 'matrix.laserbeam31.uk' # Change if using a private server
+          homeserver: 'matrix.laserbeam31.uk'
           token: ${{ secrets.MATRIX_TOKEN }}
-          channel: '!xUcaroYgJWBNZMTspq:matrix.laserbeam31.uk' # MUST be the internal Room ID
+          channel: '!xUcaroYgJWBNZMTspq:matrix.laserbeam31.uk'
           message: |
             ### Upptime Alert: ${{ github.event.issue.title }}
             **Status:** ${{ github.event.action == 'opened' && '🟥 DOWN' || '🟩 BACK UP' }}
