@@ -1,7 +1,7 @@
 url: https://bts-metrics.su.bath.ac.uk/api/prometheus/grafana/api/v1/rules
 status: up
 code: 200
-responseTime: 403
-lastUpdated: 2026-06-15T00:16:59.272Z
+responseTime: 404
+lastUpdated: 2026-06-16T01:43:05.689Z
 startTime: 2026-05-13T14:20:35.959Z
 generator: Upptime <https://github.com/upptime/upptime>
