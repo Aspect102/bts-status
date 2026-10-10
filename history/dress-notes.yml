@@ -1,7 +1,7 @@
 url: https://bts-dressnotes.su.bath.ac.uk/
-status: up
-code: 200
-responseTime: 954
-lastUpdated: 2026-10-10T18:53:57.828Z
+status: down
+code: 504
+responseTime: 30506
+lastUpdated: 2026-10-10T22:15:04.535Z
 startTime: 2026-05-05T18:40:32.712Z
 generator: Upptime <https://github.com/upptime/upptime>
