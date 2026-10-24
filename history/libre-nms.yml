@@ -1,7 +1,7 @@
 url: https://librenms.bts-crew.com/
 status: down
-code: 401
-responseTime: 468
-lastUpdated: 2026-10-23T01:21:08.690Z
+code: 403
+responseTime: 593
+lastUpdated: 2026-10-24T01:25:59.971Z
 startTime: 2026-05-05T18:58:28.715Z
 generator: Upptime <https://github.com/upptime/upptime>
